@@ -58,8 +58,8 @@
 			children = (
 				D1860E5021F74C550011BA97 /* AppDelegate.swift */,
 				D1860E5221F74C550011BA97 /* ViewController.swift */,
-				D1860E5421F74C550011BA97 /* Main.storyboard */,
 				D1860E6221F74D7C0011BA97 /* MemoTableTableViewController.swift */,
+				D1860E5421F74C550011BA97 /* Main.storyboard */,
 				D1860E5721F74C560011BA97 /* Assets.xcassets */,
 				D1860E5921F74C560011BA97 /* LaunchScreen.storyboard */,
 				D1860E5C21F74C560011BA97 /* Info.plist */,
