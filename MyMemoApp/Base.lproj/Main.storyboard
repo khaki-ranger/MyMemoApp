@@ -84,6 +84,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="memoTextField" destination="QWD-FF-0fb" id="2yM-kz-pb4"/>
+                        <outlet property="saveButton" destination="KEO-XY-Ac9" id="9wQ-Um-hDV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
