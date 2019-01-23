@@ -10,6 +10,10 @@ import UIKit
 
 class MemoViewController: UIViewController {
 
+    var memo: String?
+    
+    @IBOutlet weak var memoTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +23,10 @@ class MemoViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
     }
     
 
