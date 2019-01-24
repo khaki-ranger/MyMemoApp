@@ -80,7 +80,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Memo" id="YHA-XP-2gK">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XEA-f9-0uL"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KEO-XY-Ac9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KEO-XY-Ac9">
+                            <connections>
+                                <segue destination="wGh-fI-bjI" kind="unwind" unwindAction="unwindToMemoListWithSender:" id="f4r-7d-yeW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="memoTextField" destination="QWD-FF-0fb" id="2yM-kz-pb4"/>
@@ -88,6 +92,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="wGh-fI-bjI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1956" y="133.5832083958021"/>
         </scene>
