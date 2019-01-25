@@ -67,6 +67,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="memoTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="aXY-MW-0cQ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,7 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Memo" id="YHA-XP-2gK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XEA-f9-0uL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XEA-f9-0uL">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="j99-su-TsY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="KEO-XY-Ac9">
                             <connections>
                                 <segue destination="wGh-fI-bjI" kind="unwind" unwindAction="unwindToMemoListWithSender:" id="f4r-7d-yeW"/>
