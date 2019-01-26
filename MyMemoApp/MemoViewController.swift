@@ -20,6 +20,9 @@ class MemoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.saveButton.isEnabled = false
+        if let memo = self.memo {
+            self.memoTextField.text = memo
+        }
     }
 
     @IBAction func memoTextFieldChanged(_ sender: Any) {
