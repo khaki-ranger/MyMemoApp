@@ -16,7 +16,11 @@ class MemoTableTableViewController: UITableViewController {
         guard let sourceVC = sender.source as? MemoViewController, let memo = sourceVC.memo else {
             return
         }
-        self.memos.append(memo)
+        if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+            self.memos[selectedIndexPath.row] = memo
+        } else {
+            self.memos.append(memo)
+        }
         self.tableView.reloadData()
     }
 
