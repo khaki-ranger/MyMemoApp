@@ -10,7 +10,8 @@ import UIKit
 
 class MemoTableTableViewController: UITableViewController {
     
-    var memos = ["blue", "red", "pink"]
+    let userDafaults = UserDefaults.standard
+    var memos = [String]()
     
     @IBAction func unwindToMemoList(sender: UIStoryboardSegue) {
         guard let sourceVC = sender.source as? MemoViewController, let memo = sourceVC.memo else {
@@ -26,6 +27,12 @@ class MemoTableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.userDafaults.object(forKey: "memos") != nil {
+            self.memos = self.userDafaults.stringArray(forKey: "memos")!
+        } else {
+            self.memos = ["memo1", "memo2", "memo3"]
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
